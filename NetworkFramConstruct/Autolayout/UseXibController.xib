@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UseXibController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ody-Xn-pl7">
+                    <rect key="frame" x="250" y="70" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.065288267489999996" green="0.75419521499999997" blue="0.5670129008" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="BQP-9i-w67"/>
+                        <constraint firstAttribute="height" constant="100" id="zQN-u2-Ak0"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="70" maxX="10" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                    <state key="normal" title="Click" image="img_head_default_parent.jpg">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="centerButtonBeTapped:" destination="-2" eventType="touchUpInside" id="T2d-gY-DZp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzy-aj-99f">
+                    <rect key="frame" x="20" y="400" width="200" height="20"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KwT-za-pc4"/>
+                        <constraint firstAttribute="width" constant="200" id="Qul-Ae-U8V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xch-hK-9FW">
+                    <rect key="frame" x="250" y="470" width="100" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="UNp-Rf-JWd"/>
+                        <constraint firstAttribute="height" constant="30" id="hwQ-Y2-Do9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_head_default_parent.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nv0-N9-370">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.2207256283" green="0.72549019609999998" blue="0.5690557248" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="AXE-Iu-NbK"/>
+                        <constraint firstAttribute="width" constant="100" id="DOY-Bh-TjA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ody-Xn-pl7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="15g-cd-5dK"/>
+                <constraint firstItem="nv0-N9-370" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JC9-NT-Sc3"/>
+                <constraint firstItem="Kzy-aj-99f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fsY-63-Ebs"/>
+                <constraint firstItem="xch-hK-9FW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h3T-bl-ciV"/>
+                <constraint firstItem="nv0-N9-370" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="phO-HY-Scv"/>
+                <constraint firstItem="ody-Xn-pl7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="qT8-Sr-Vm7"/>
+                <constraint firstAttribute="bottom" secondItem="xch-hK-9FW" secondAttribute="bottom" constant="100" id="te3-tF-fqc"/>
+            </constraints>
+            <point key="canvasLocation" x="531" y="600"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_head_default_parent.jpg" width="50" height="50"/>
+    </resources>
+</document>

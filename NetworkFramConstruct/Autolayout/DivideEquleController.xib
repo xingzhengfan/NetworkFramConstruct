@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DivideEquleController">
+            <connections>
+                <outlet property="bigView" destination="mxe-qL-Izm" id="oJo-EW-Qv6"/>
+                <outlet property="hiddenTopView" destination="CkX-D6-QmY" id="m1X-AH-Cb2"/>
+                <outlet property="hiddenView" destination="Q4y-0O-tgr" id="ung-Ld-oZT"/>
+                <outlet property="leftDistanceOfBigView" destination="Wt5-5B-jgc" id="YLe-fL-7Dn"/>
+                <outlet property="mainView" destination="ekf-4Y-9Wh" id="8hk-JU-eop"/>
+                <outlet property="middleView" destination="Z8I-8m-n1M" id="yWh-bh-vgg"/>
+                <outlet property="middleViewTopSpaceLayout" destination="6rC-tP-FAB" id="qd4-Rj-0SK"/>
+                <outlet property="panGesture" destination="vnw-Pb-LTj" id="NdN-Wp-pWd"/>
+                <outlet property="rightDistanceOfSmallView" destination="nUv-Ny-KXf" id="3tL-wE-hxE"/>
+                <outlet property="smallView" destination="DvH-2k-9Om" id="ZUE-c6-VPq"/>
+                <outlet property="topLayoutConstraintOfHiddenTopView" destination="DCL-Qh-bgX" id="UP2-aD-Jzx"/>
+                <outlet property="topLayoutConstraintOfMainView" destination="6rC-tP-FAB" id="DDQ-vy-HvR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view0" destination="cGk-k6-REA" id="3m8-gG-0X0"/>
+                <outlet property="view1" destination="78g-mv-yIJ" id="dET-is-9N1"/>
+                <outlet property="view2" destination="a9B-jh-mF5" id="J91-MS-ZXm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-4Y-9Wh">
+                    <frame key="frameInset" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cGk-k6-REA">
+                            <frame key="frameInset" minX="8" minY="8" width="192" height="116"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="fGW-sa-W1M"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a9B-jh-mF5">
+                            <frame key="frameInset" minX="400" minY="8" width="192" height="116"/>
+                            <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="edm-R1-bZo"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z8I-8m-n1M">
+                            <frame key="frameInset" minX="8" minY="132" width="580" height="160"/>
+                            <color key="backgroundColor" red="0.065288267489999996" green="0.75419521499999997" blue="0.5670129008" alpha="1" colorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="Vfv-q4-W6b"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="78g-mv-yIJ">
+                            <frame key="frameInset" minX="208" minY="8" width="184" height="116"/>
+                            <color key="backgroundColor" red="0.56078431370000004" green="0.72549019609999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="UZl-dO-3tS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cGk-k6-REA" firstAttribute="leading" secondItem="ekf-4Y-9Wh" secondAttribute="leading" constant="10" id="1ft-HZ-AbY"/>
+                        <constraint firstItem="Z8I-8m-n1M" firstAttribute="top" secondItem="cGk-k6-REA" secondAttribute="bottom" constant="10" id="8tW-od-Gvp"/>
+                        <constraint firstItem="a9B-jh-mF5" firstAttribute="leading" secondItem="78g-mv-yIJ" secondAttribute="trailing" constant="10" id="BpV-ub-Jym"/>
+                        <constraint firstItem="cGk-k6-REA" firstAttribute="width" secondItem="78g-mv-yIJ" secondAttribute="width" id="CyF-R8-SMR"/>
+                        <constraint firstItem="a9B-jh-mF5" firstAttribute="top" secondItem="ekf-4Y-9Wh" secondAttribute="top" constant="74" id="QKG-19-GOC"/>
+                        <constraint firstItem="cGk-k6-REA" firstAttribute="top" secondItem="ekf-4Y-9Wh" secondAttribute="top" constant="74" id="Qzh-GT-Net"/>
+                        <constraint firstItem="78g-mv-yIJ" firstAttribute="top" secondItem="ekf-4Y-9Wh" secondAttribute="top" constant="74" id="aCD-lw-REK"/>
+                        <constraint firstAttribute="trailing" secondItem="a9B-jh-mF5" secondAttribute="trailing" constant="10" id="fsr-mq-6JT"/>
+                        <constraint firstItem="78g-mv-yIJ" firstAttribute="width" secondItem="a9B-jh-mF5" secondAttribute="width" id="l0d-pY-olK"/>
+                        <constraint firstAttribute="trailing" secondItem="Z8I-8m-n1M" secondAttribute="trailing" constant="10" id="uvf-ZM-kdk"/>
+                        <constraint firstItem="Z8I-8m-n1M" firstAttribute="leading" secondItem="ekf-4Y-9Wh" secondAttribute="leading" constant="10" id="v1j-cg-hqE"/>
+                        <constraint firstItem="78g-mv-yIJ" firstAttribute="leading" secondItem="cGk-k6-REA" secondAttribute="trailing" constant="10" id="yw7-KU-kvI"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="vnw-Pb-LTj" appends="YES" id="zSv-60-AmO"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkX-D6-QmY">
+                    <frame key="frameInset" minY="74" width="600" height="120"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4y-0O-tgr">
+                            <frame key="frameInset" minX="61" minY="15" width="70" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-qL-Izm">
+                            <frame key="frameInset" minX="215" minY="-2" width="150" height="100"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvH-2k-9Om">
+                            <frame key="frameInset" minX="446" minY="28" width="50" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mxe-qL-Izm" firstAttribute="leading" secondItem="CkX-D6-QmY" secondAttribute="leading" constant="150" id="Wt5-5B-jgc"/>
+                        <constraint firstAttribute="trailing" secondItem="DvH-2k-9Om" secondAttribute="trailing" constant="20" id="nUv-Ny-KXf"/>
+                        <constraint firstAttribute="height" constant="120" id="pAY-YK-yKu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ekf-4Y-9Wh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6rC-tP-FAB"/>
+                <constraint firstItem="CkX-D6-QmY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="DCL-Qh-bgX"/>
+                <constraint firstAttribute="trailing" secondItem="ekf-4Y-9Wh" secondAttribute="trailing" id="M9X-rQ-Y27"/>
+                <constraint firstItem="ekf-4Y-9Wh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RKv-tf-tyg"/>
+                <constraint firstAttribute="bottom" secondItem="ekf-4Y-9Wh" secondAttribute="bottom" id="aIq-4f-NjM"/>
+                <constraint firstItem="CkX-D6-QmY" firstAttribute="trailing" secondItem="ekf-4Y-9Wh" secondAttribute="trailing" id="hpH-a7-Hug"/>
+                <constraint firstItem="CkX-D6-QmY" firstAttribute="leading" secondItem="ekf-4Y-9Wh" secondAttribute="leading" id="huF-Er-dd5"/>
+            </constraints>
+            <point key="canvasLocation" x="470" y="74"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="vnw-Pb-LTj"/>
+    </objects>
+</document>
